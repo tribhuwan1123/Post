@@ -1,0 +1,7 @@
+Note: The viewModelScope property of ViewModel classes is hardcoded to Dispatchers.Main.
+ Replace it in tests by calling Dispatchers.setMain and passing in a test dispatcher.
+
+ Note: While you might have seen hardcoded dispatchers in code snippets across this site and our codelabs,
+ this is only to keep the sample code concise and simple.
+ In your application, you should inject dispatchers.
+
